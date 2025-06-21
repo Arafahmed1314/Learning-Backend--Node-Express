@@ -1,0 +1,1 @@
+const { startP } = require('./index2.js');

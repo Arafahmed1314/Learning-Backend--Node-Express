@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 p-4">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6 text-center">Student Management Dashboard</h1>
+
+    <!-- Auth Controls -->
+    <div class="mb-4 flex justify-between items-center">
+      <div>
+        <span class="mr-2">Welcome, user@example.com</span>
+        <button class="px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600">Logout</button>
+      </div>
+    </div>
+
+    <!-- Filter and Add Controls -->
+    <div class="mb-6 flex flex-col sm:flex-row gap-4">
+      <div class="flex-1">
+        <label class="block text-sm font-medium text-gray-700">Filter by Course</label>
+        <select class="mt-1 p-2 w-full border rounded-md">
+          <option>All Courses</option>
+          <option>Mathematics</option>
+          <option>Physics</option>
+          <option>Chemistry</option>
+        </select>
+      </div>
+      <button class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 self-end">Add Student</button>
+    </div>
+
+    <!-- Student List -->
+    <div class="overflow-x-auto">
+      <table class="w-full bg-white shadow-md rounded-lg">
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="p-3 text-left">Name</th>
+            <th class="p-3 text-left">Email</th>
+            <th class="p-3 text-left">Course</th>
+            <th class="p-3 text-left">Age</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b">
+            <td class="p-3">John Doe</td>
+            <td class="p-3">john@example.com</td>
+            <td class="p-3">Mathematics</td>
+            <td class="p-3">20</td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-3">Jane Smith</td>
+            <td class="p-3">jane@example.com</td>
+            <td class="p-3">Physics</td>
+            <td class="p-3">22</td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-3">Alice Johnson</td>
+            <td class="p-3">alice@example.com</td>
+            <td class="p-3">Mathematics</td>
+            <td class="p-3">19</td>
+          </tr>
+          <tr class="border-b">
+            <td class="p-3">Bob Wilson</td>
+            <td class="p-3">bob@example.com</td>
+            <td class="p-3">Chemistry</td>
+            <td class="p-3">21</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
